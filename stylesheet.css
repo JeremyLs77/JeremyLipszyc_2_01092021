@@ -11,7 +11,99 @@
     font-style: normal;  
 }
 
-body
+*{
+    font-family: "Raleway", sans-serif;
+}
+
+.header 
 {
-background-color: #f2f2f2
+display: flex;
+}
+
+#navigation
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#recherche_et_filtres {
+    padding: 0px 15px 0px 15px;
+    line-height: 25px;
+}
+
+#filtres{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.filtre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    margin-right: 20px;
+    margin-bottom:16px;
+}
+
+.Info {
+display: flex;
+align-items: center;
+height: 30px;
+margin-top: 15px;
+margin-bottom: 25px;
+}
+
+.infoIconeconteneur{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+border: 1px solid;
+padding: 10px;
+height: 20px;
+width: 20px;
+border-radius: 50%;
+color: blue;
+}
+
+.infotexte {
+    margin-left: 10px;
+}
+
+.HebergementMainImg{
+    height: 8rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+#Hebergement{
+    display: flex;
+}
+
+.HebergementMainWrapper{
+    background-color: #f2f2f2;
+    border-radius: 1rem 1rem 1rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 22rem;
+    justify-content: space-evenly
+}
+
+.HebergementMainOffre{
+    width: 14rem;
+    background-color: white;
+    margin-top: 2rem;
+    margin-right: 3rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+
+.PopulairesImg{
+    height: 8rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.ActivitésImg{
+    height: 14rem;
 }
