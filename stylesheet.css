@@ -20,11 +20,14 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 #logo
 {
     padding: 1rem 1rem 0rem 1rem;
+    margin-bottom: 2rem;
     justify-content: flex-start;
 }
 
@@ -33,6 +36,7 @@
     padding: 1rem 1rem 0rem 1rem;
     margin-left: auto;
     width: 25%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     font-size: 0.8em;
@@ -43,6 +47,8 @@
     color: black;
     text-decoration: none;
     font-size: 1.1em;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .navitems:hover
@@ -56,6 +62,7 @@
     color: #0060fc;
     text-decoration: none;
     font-size: 1.1em;
+    padding-top: 30px;
 }
 
 #Titre_recherche
@@ -203,7 +210,7 @@ color: blue;
     background-color: #f2f2f2;
     border-radius: 2rem 2rem 2rem 2rem;
     padding: 20px;
-    max-width: 1000px;
+    max-width: 1020px;
     margin-bottom: 25px;
 }
 
@@ -263,7 +270,10 @@ color: grey;
 .Populaires{
     background-color: #f2f2f2;
     border-radius: 2rem 2rem 2rem 2rem;
-    width: 28rem;
+    width: 34rem;
+    height: 645px;
+    margin-bottom: 24px;
+    margin-right: 7px;
 }
 
 .PopulairesWrapper{
@@ -328,6 +338,11 @@ i.fas.fa-chart-line{
 display: flex;
 }
 
+.ActivitésWrapper a
+{
+    text-decoration: none;
+}
+
 .ActivitésCadre
 {
     padding-bottom: 50px;
@@ -339,6 +354,13 @@ display: flex;
     box-shadow: 1px 1px 2px 0px #c7c3c3
 }
 
+.ActivitésOffreTitre{
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+    margin: 10px 20px 0px 5px;
+}
+
 .ActivitésImg{
     width: 100%;
     height: 100%;
@@ -347,12 +369,11 @@ display: flex;
 }
 
 .ActivitésVieuxport{
-    width: 350px;
-    height: 500px;
+    width: 380px;
+    height: 480px;
     background-color: white;
     padding: 5px;
     margin-top: 2rem;
-    margin-right: 3rem;
     margin-left: 12px;
     margin-right: 12px;
     border-radius: 1rem 1rem 1rem 1rem;
@@ -366,12 +387,12 @@ display: flex;
 
 .ActivitésPomegues{
     flex-direction: column;
-    width: 350px;
-    height: 280px ;
+    width: 380px;
+    height: 290px ;
     background-color: white;
     padding: 5px;
     margin-top: 2rem;
-    margin-right: 3rem;
+    margin-bottom: 20px;
     margin-left: 12px;
     margin-right: 12px;
     border-radius: 1rem 1rem 1rem 1rem;
@@ -379,26 +400,24 @@ display: flex;
 
 .ActivitésFrioul{
     flex-direction: column;
-    width: 350px;
+    width: 380px;
     height: 110px;
     background-color: white;
     padding: 5px;
-    margin-top: 2rem;
-    margin-right: 3rem;
+    margin-top: 3rem;
     margin-left: 12px;
     margin-right: 12px;
     border-radius: 1rem 1rem 1rem 1rem;
 }
 
 .ActivitésCalanques{
-    width: 350px;
-    height: 500px;
+    width: 380px;
+    height: 480px;
     background-color: white;
     padding: 5px;
     margin-top: 2rem;
-    margin-right: 3rem;
-    margin-left: 12px;
     margin-right: 12px;
+    margin-left: 12px;
     border-radius: 1rem 1rem 1rem 1rem;
 }
 
@@ -409,32 +428,24 @@ display: flex;
 }
 
 .ActivitésNotreDame{
-    width: 350px;
-    height: 210px;
+    width: 380px;
+    height: 200px;
     background-color: white;
     padding: 5px;
     margin-top: 2rem;
-    margin-right: 3rem;
+    margin-bottom: 20px;
     margin-left: 12px;
-    margin-right: 12px;
     border-radius: 1rem 1rem 1rem 1rem;
 }
 
 .ActivitésLongchamp{
-    width: 350px;
-    height: 210px;
+    width: 380px;
+    height: 200px;
     background-color: white;
     padding: 5px;
-    margin-top: 2rem;
-    margin-right: 3rem;
+    margin-top: 3rem;
     margin-left: 12px;
-    margin-right: 12px;
     border-radius: 1rem 1rem 1rem 1rem;
-}
-
-.ActivitésCadre{
-    color: black;
-    text-decoration: none;
 }
 
 .FooterWrapper
@@ -449,6 +460,5 @@ display: flex;
 
 .FooterContenu a{
     text-decoration: none;
-    list-style-type: none;
     color: grey;
 }
