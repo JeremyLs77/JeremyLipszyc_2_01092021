@@ -55,6 +55,7 @@
 {
     border-top: 2px solid #0060fc;
     color: #0060fc;
+    padding-top: 30px;
 }
 
 #navsignin
@@ -272,7 +273,7 @@ color: grey;
     background-color: #f2f2f2;
     border-radius: 2rem 2rem 2rem 2rem;
     width: 34rem;
-    height: 645px;
+    height: 40rem;
     margin-bottom: 24px;
     margin-right: 7px;
 }
@@ -376,6 +377,7 @@ display: flex;
     background-color: white;
     padding: 5px;
     margin-top: 2rem;
+    margin-right: 3rem;
     margin-left: 12px;
     margin-right: 12px;
     border-radius: 1rem 1rem 1rem 1rem;
@@ -437,6 +439,7 @@ display: flex;
     margin-top: 2rem;
     margin-bottom: 20px;
     margin-left: 12px;
+    margin-right: 12px;
     border-radius: 1rem 1rem 1rem 1rem;
 }
 
@@ -447,7 +450,13 @@ display: flex;
     padding: 5px;
     margin-top: 3rem;
     margin-left: 12px;
+    margin-right: 12px;
     border-radius: 1rem 1rem 1rem 1rem;
+}
+
+.ActivitésCadre{
+    color: black;
+    text-decoration: none;
 }
 
 .FooterWrapper
@@ -462,6 +471,7 @@ display: flex;
 
 .FooterContenu a{
     text-decoration: none;
+    list-style-type: none;
     color: grey;
 }
 
@@ -477,49 +487,87 @@ display: flex;
 }
 
 @media screen and (max-width: 1024px) {
+    #recherche_et_filtres{
+        margin-bottom: 40rem;
+    }
+
     #Hebergement{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .Populaires{
         display:flex;
         flex-direction: column;
-        width:100%;
-        margin-bottom: 10rem;
+        width: 100%;
+        margin-bottom: 2rem;
     }
 
     .ActivitésWrapper{
         display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .ActivitésColonne1{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ActivitésColonne2{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 
     .ActivitésVieuxport{
         height: 150px;
         width: 300px;
+        margin: 10px 10px 10px 10px;
+        padding-bottom: 40px;
     }
 
     .ActivitésPomegues{
         height: 150px;
         width: 300px;
+        margin: 10px 10px 10px 10px;
+        padding-bottom: 40px;
     }
 
     .ActivitésFrioul{
         height: 150px;
         width: 300px;
+        margin: 10px 10px 10px 10px;
+        padding-bottom: 40px;
     }
 
     .ActivitésCalanques{
         height: 150px;
         width: 300px;
+        margin: 10px 10px 10px 10px;
+        padding-bottom: 40px;   
     }
 
     .ActivitésNotreDame{
         height: 150px;
         width: 300px;
+        margin: 10px 10px 10px 10px;
+        padding-bottom: 40px;
     }
 
     .ActivitésLongchamp{
         height: 150px;
         width: 300px;
+        margin: 10px 10px 10px 10px;
+        padding-bottom: 40px;
+    }
+
+    .ActivitésOffreTitre{
+        text-align: center;
+        font-size: 1.2em;
     }
 }
