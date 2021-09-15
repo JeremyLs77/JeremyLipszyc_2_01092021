@@ -571,3 +571,63 @@ display: flex;
         font-size: 1.2em;
     }
 }
+
+@media screen and (max-width: 600px) {
+
+    .header{
+        display:block;
+    }
+
+    #navigation{
+        display:flex;
+        justify-content: center;
+        margin-left: 0;
+        width:auto;
+        border-bottom: 2px solid lightgrey;
+    }
+
+    #navsignin{
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        font-weight: 700;
+    }
+
+    #logo{
+        padding: 1rem 2rem 0rem 2rem;
+        margin: 0;
+        grid-area: Logo;
+    }
+
+    .navitems{
+        padding-right: 60px;
+        padding-left: 60px;
+        padding-bottom: 10px;
+    }
+
+    .navitems:hover{
+        border-top:none;
+        border-bottom: 3px solid #0060fc;
+        color: #0060fc;
+    }
+
+    #recherche_et_filtres{
+        margin-bottom: 200px;
+        padding: 0px 25px 0px 25px;
+    }
+
+    #barre_de_recherche{
+        text-align: center;
+    }
+
+    .HebergementMain{
+        max-height: 400px;
+        width: 500px;
+    }
+
+    .Populaires{
+        max-height: 400px;
+        width: 500px;
+    }
+
+}
