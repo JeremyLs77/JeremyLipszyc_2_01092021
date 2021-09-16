@@ -1,7 +1,7 @@
 @font-face
 {
-    font-family: 'ralewaythin';
-    src: url('raleway-variablefont_wght-webfont.eot');
+    font-family: "Raleway";
+    src: url('static/Raleway-Regular.ttf');
     src: url('raleway-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
          url('raleway-variablefont_wght-webfont.woff2') format('woff2'),
          url('raleway-variablefont_wght-webfont.woff') format('woff'),
@@ -95,6 +95,10 @@ i.fas.fa-map-marker-alt{
    font-size: 14px;
 }
 
+i.fas.fa-search{
+    display:none;
+}
+
 #barre_de_recherche button
 {
     background: #0070fc;
@@ -180,7 +184,7 @@ padding: 10px;
 height: 10px;
 width: 10px;
 border-radius: 50%;
-color: blue;
+color:#0065fc;
 }
 
 .infotexte {
@@ -354,7 +358,7 @@ display: flex;
     height: 100%;
     background-color: white;
     border-radius: 1rem;
-    box-shadow: 1px 1px 2px 0px #c7c3c3
+    box-shadow: 2px 2px 3px 0px #c7c3c3
 }
 
 .ActivitésOffreTitre{
@@ -471,8 +475,20 @@ display: flex;
 
 .FooterContenu a{
     text-decoration: none;
-    list-style-type: none;
     color: grey;
+}
+
+.FooterContenuTitre{
+    padding-top: 30px;
+}
+
+.FooterListe{
+    list-style: none;
+    padding-left: 0;
+}
+
+.FooterListeTexte{
+    padding: 5px;
 }
 
 @media screen and (max-width: 1680px) {
@@ -574,6 +590,10 @@ display: flex;
 
 @media screen and (max-width: 600px) {
 
+    body{
+        margin:0;
+    }
+
     .header{
         display:block;
     }
@@ -584,17 +604,18 @@ display: flex;
         margin-left: 0;
         width:auto;
         border-bottom: 2px solid lightgrey;
+        font-size: 1.1em;
     }
 
     #navsignin{
         position: absolute;
-        top: 15px;
+        top: 7px;
         right: 30px;
         font-weight: 700;
     }
 
     #logo{
-        padding: 1rem 2rem 0rem 2rem;
+        padding: 1.4rem 2rem 0rem 2.2rem;
         margin: 0;
         grid-area: Logo;
     }
@@ -612,22 +633,172 @@ display: flex;
     }
 
     #recherche_et_filtres{
-        margin-bottom: 200px;
+        margin-bottom: 10px;
         padding: 0px 25px 0px 25px;
+        font-size: 1.25em;
+    }
+
+    #Titre_recherche_note{
+        font-weight:300;
+    }
+
+    i.fas.fa-map-marker-alt{
+        padding: 16px;
     }
 
     #barre_de_recherche{
+        margin-left: 17px;
         text-align: center;
+        width: 340px;
+        height: 65px;
+    }
+
+    #barre_de_recherche input{
+        padding-left: 5px;
+        padding-top: 16px;
+        padding-right: 5px;
+        padding-bottom: 16px;
+        font-size: 15px;
+    }
+
+    #barre_de_recherche button{
+        display:none;
+    }
+
+    i.fas.fa-search{
+        display: inline-block;
+        background-color:#0065fc;
+        color:white;
+        border-radius: 11px;
+        padding: 16px;
+    }
+
+    #filtres{
+        margin-top: 5px;
+    }
+
+    #Titre_filtres{
+        margin-right: 10rem;
+    }
+
+    .filtre{
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-right: 7px;
+    }
+
+    .Info{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .infotexte{
+        font-size: 0.85em;
+    }
+
+    .Conteneur_icone{
+        height: 50px;
+        width: 50px;
+    }
+
+    #Hebergement{
+        max-height: 2200px;
+        margin: 0;
+        padding: 0px 0px 0px 0px;
+        width: 100%;
     }
 
     .HebergementMain{
-        max-height: 400px;
-        width: 500px;
+        background-color: white;
+        max-height: 1400px;
+        width: 414px;
     }
 
     .Populaires{
-        max-height: 400px;
-        width: 500px;
+        width: 100%;
+        border-radius: 0rem 0rem 0rem 0rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .PopulairesOffre{
+        border-radius: 1rem 1.5rem 1.5rem 1rem;
+        margin-top: 4px;
+    }
+
+    .PopulairesImg{
+        border-radius: 1rem 1.5rem 1.5rem 1rem;
+        width:33%;
+        height: auto;
+    }
+
+    .HebergementMainOffre{
+        width:20rem;
+    }
+
+    .HebergementMainImg{
+        width: 20rem;
+        height: 7rem;
+    }
+
+    .HebergementMainTitre{
+        margin-left: 25px;
+    }
+
+    #Afficherplus{
+        margin-top: 25px;
+        margin-left: 25px;
+        font-size: 0.97em;
+        font-weight: 700;
+    }
+
+    .ActivitésTitre{
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+
+    .ActivitésWrapper{
+        flex-direction: column;
+    }
+
+    .ActivitésColonne1{
+        flex-direction: column;
+    }
+
+    .ActivitésColonne2{
+        flex-direction: column;
+    }
+
+    .ActivitésCadre{
+        width: 100%;
+    }
+
+    .ActivitésVieuxport{
+        margin-bottom: 1rem;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .ActivitésPomegues{
+        margin-bottom: 1rem;
+    }
+
+    .ActivitésFrioul{
+        margin-bottom: 1rem;
+    }
+
+    .ActivitésCalanques{
+        margin-bottom: 1rem;
+    }
+
+    .ActivitésNotreDame{
+        margin-bottom: 1rem;
+    }
+
+    .FooterWrapper{
+        margin-top: 4rem;
+        display:flex;
+        flex-direction: column;
     }
 
 }
