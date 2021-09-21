@@ -1,19 +1,29 @@
+/* Réglages de la police de caractère */
+
 @font-face
 {
     font-family: "Raleway";
     src: url('static/Raleway-Regular.ttf');
-    src: url('raleway-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
-         url('raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('raleway-variablefont_wght-webfont.woff') format('woff'),
-         url('raleway-variablefont_wght-webfont.ttf') format('truetype'),
-         url('raleway-variablefont_wght-webfont.svg#ralewaythin') format('svg');
-    font-weight: normal;
-    font-style: normal;  
 }
 
-*{
+@font-face
+{
+    font-family: "Raleway-Bold";
+    src: url('static/Raleway-Bold.ttf');
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Raleway-Bold"
+}
+
+a,
+p {
     font-family: "Raleway", sans-serif;
 }
+
+/* Paramètres du header */
 
 .header
 {
@@ -29,6 +39,7 @@
     padding: 1rem 1rem 0rem 1rem;
     margin-bottom: 2rem;
     justify-content: flex-start;
+    cursor: pointer;
 }
 
 #navigation
@@ -46,15 +57,15 @@
 {
     color: black;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1.2em;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 .navitems:hover
 {
-    border-top: 2px solid #0060fc;
-    color: #0060fc;
+    border-top: 2px solid #0065fc;
+    color: #0065fc;
     padding-top: 30px;
 }
 
@@ -62,27 +73,29 @@
 {
     color: #0060fc;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    font-weight: 600;
     padding-top: 30px;
 }
 
+/* Barre de recherche et son texte d'accroche */
+
 #Titre_recherche
 {
-    margin-top: 1em;
-    margin-bottom: 0.1em;
-    font-size: 1.3em;
+    margin-top: 0.9em;
+    margin-bottom: 0.2em;
+    font-weight: bolder;
 }
 
 #Titre_recherche_note{
-    margin-top: 0.1em;
-    font-size: 0.9em;
-    font-weight: 200;
+    margin-top: 0.2em;
+    font-weight: 500;
 }
 
 i.fas.fa-map-marker-alt{
     background-color: #F0F0F0;
-    padding: 10px;
-    border-radius: 6px 0px 0px 6px;
+    padding: 15px;
+    border-radius: 7px 0px 0px 7px;
 }
 
 #barre_de_recherche input
@@ -90,7 +103,7 @@ i.fas.fa-map-marker-alt{
    border: none; 
    border-top: 1px solid #f2f2f2;
    border-bottom: 1px solid #f2f2f2;
-   padding: 10px;
+   padding: 15px;
    font-weight: bold;
    font-size: 14px;
 }
@@ -105,9 +118,12 @@ i.fas.fa-search{
     color: white;
     border: none;
     border-radius: 0px 10px 10px 0px;
-    padding: 10px;
+    padding: 15px;
     font-size: 14px;
+    cursor: pointer;
 }
+
+/* Paramètres des filtres */
 
 #Titre_filtres
 {
@@ -137,10 +153,12 @@ i.fas.fa-search{
     border-radius: 2rem;
     margin-right: 20px;
     margin-bottom: 16px;
+    transition: 0.4s;
 }
 
 .filtre:hover{
     background-color: lightblue;
+    cursor: pointer;
     color: white
 }
 
@@ -166,6 +184,8 @@ i.fas.fa-search{
     font-size: 0.9em;
 }
 
+/* Texte info "500 logements disponibles" */
+
 .Info {
 display: flex;
 align-items: center;
@@ -180,9 +200,9 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 border: 1px solid #d8d8d8;
-padding: 10px;
-height: 10px;
-width: 10px;
+padding: 8px;
+height: 8px;
+width: 8px;
 border-radius: 50%;
 color:#0065fc;
 }
@@ -190,6 +210,8 @@ color:#0065fc;
 .infotexte {
     margin-left: 10px;
 }
+
+/* Partie "Hébergements à Marseille" */
 
 .HebergementMainTitre
 {
@@ -273,11 +295,13 @@ color: grey;
     font-weight:600;
 }
 
+/* Partie "Les plus populaires */
+
 .Populaires{
     background-color: #f2f2f2;
     border-radius: 2rem 2rem 2rem 2rem;
-    width: 34rem;
-    height: 40rem;
+    width: 36rem;
+    height: 650px;
     margin-bottom: 24px;
     margin-right: 7px;
 }
@@ -285,6 +309,7 @@ color: grey;
 .PopulairesWrapper{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .PopulairesTitre{
@@ -305,7 +330,9 @@ i.fas.fa-chart-line{
     margin-left: 15px;
     margin-bottom: 15px;
     margin-right: 15px;
+    width: 470px;
     padding: 5px;
+    border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 1px 1px 2px 0px #c7c3c3
 }
 
@@ -325,15 +352,12 @@ i.fas.fa-chart-line{
 .PopulairesImg
 {
     object-fit: cover;
-    width: 33%;
+    width: 27%;
     height: 9rem;
     border-radius: 1rem 0rem 0rem 1rem;
 }
 
-.PopulairesImg{
-    height: 8rem;
-    border-radius: 1rem 1rem 0rem 0rem;
-}
+/* Partie "Activités à Marseille"*/
 
 .ActivitésTitre
 {
@@ -463,6 +487,8 @@ display: flex;
     text-decoration: none;
 }
 
+/* Partie footer */
+
 .FooterWrapper
 {
     background-color: #f2f2f2;
@@ -488,8 +514,13 @@ display: flex;
 }
 
 .FooterListeTexte{
+    font-weight: 200;
     padding: 5px;
 }
+
+    /* AFFICHAGE RESPONSIVE */
+
+/* Écrans 20 à 22 pouces */
 
 @media screen and (max-width: 1680px) {
 
@@ -501,6 +532,8 @@ display: flex;
         width: 17rem;
     }
 }
+
+/* Écrans tablettes */
 
 @media screen and (max-width: 1024px) {
     #recherche_et_filtres{
@@ -517,6 +550,10 @@ display: flex;
         flex-direction: column;
         width: 100%;
         margin-bottom: 2rem;
+    }
+
+    .PopulairesOffre{
+        width: 750px;
     }
 
     .ActivitésWrapper{
@@ -544,42 +581,42 @@ display: flex;
         height: 150px;
         width: 300px;
         margin: 10px 10px 10px 10px;
-        padding-bottom: 40px;
+        padding-bottom: 50px;
     }
 
     .ActivitésPomegues{
         height: 150px;
         width: 300px;
         margin: 10px 10px 10px 10px;
-        padding-bottom: 40px;
+        padding-bottom: 50px;
     }
 
     .ActivitésFrioul{
         height: 150px;
         width: 300px;
         margin: 10px 10px 10px 10px;
-        padding-bottom: 40px;
+        padding-bottom: 50px;
     }
 
     .ActivitésCalanques{
         height: 150px;
         width: 300px;
         margin: 10px 10px 10px 10px;
-        padding-bottom: 40px;   
+        padding-bottom: 50px;   
     }
 
     .ActivitésNotreDame{
         height: 150px;
         width: 300px;
         margin: 10px 10px 10px 10px;
-        padding-bottom: 40px;
+        padding-bottom: 50px;
     }
 
     .ActivitésLongchamp{
         height: 150px;
         width: 300px;
         margin: 10px 10px 10px 10px;
-        padding-bottom: 40px;
+        padding-bottom: 50px;
     }
 
     .ActivitésOffreTitre{
@@ -587,6 +624,8 @@ display: flex;
         font-size: 1.2em;
     }
 }
+
+/* Écrans mobiles/smartphones */
 
 @media screen and (max-width: 600px) {
 
@@ -621,8 +660,8 @@ display: flex;
     }
 
     .navitems{
-        padding-right: 60px;
-        padding-left: 60px;
+        padding-right: 50px;
+        padding-left: 50px;
         padding-bottom: 10px;
     }
 
@@ -638,8 +677,12 @@ display: flex;
         font-size: 1.25em;
     }
 
+    #Titre_recherche{
+        font-size: 1.1em;
+    }
+
     #Titre_recherche_note{
-        font-weight:300;
+        font-size: 0.8em;
     }
 
     i.fas.fa-map-marker-alt{
@@ -647,7 +690,6 @@ display: flex;
     }
 
     #barre_de_recherche{
-        margin-left: 17px;
         text-align: center;
         width: 340px;
         height: 65px;
@@ -724,6 +766,7 @@ display: flex;
     .PopulairesOffre{
         border-radius: 1rem 1.5rem 1.5rem 1rem;
         margin-top: 4px;
+        max-width: 320px;
     }
 
     .PopulairesImg{
