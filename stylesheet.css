@@ -23,6 +23,10 @@ p {
     font-family: "Raleway", sans-serif;
 }
 
+body{
+    margin-top:0;
+}
+
 /* Paramètres du header */
 
 .header
@@ -30,14 +34,15 @@ p {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 0;
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
     padding: 0;
+    height: 40px;
 }
 
 #logo
 {
-    padding: 1rem 1rem 0rem 1rem;
-    margin-bottom: 2rem;
+    padding: 2rem 1rem 0rem 1rem;
     justify-content: flex-start;
     cursor: pointer;
 }
@@ -47,7 +52,6 @@ p {
     padding: 1rem 1rem 0rem 1rem;
     margin-left: auto;
     width: 25%;
-    height: 100%;
     display: flex;
     justify-content: space-between;
     font-size: 0.8em;
@@ -56,26 +60,30 @@ p {
 .navitems
 {
     color: black;
+    border-top: 2px solid transparent;
     text-decoration: none;
     font-size: 1.2em;
     padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 .navitems:hover
 {
     border-top: 2px solid #0065fc;
     color: #0065fc;
-    padding-top: 30px;
 }
 
 #navsignin
 {
-    color: #0060fc;
+    color: #0065fc;
     text-decoration: none;
+    border-top: 2px solid transparent;
     font-size: 1.2em;
     font-weight: 600;
     padding-top: 30px;
+}
+
+#navsignin:hover{
+    border-top: 2px solid #0065fc;
 }
 
 /* Barre de recherche et son texte d'accroche */
@@ -261,6 +269,11 @@ color:#0065fc;
     box-shadow: 1px 1px 2px 0px #c7c3c3
 }
 
+.HebergementMainOffre:hover{
+    width:21rem;
+    box-shadow: 3px 3px 3px 3px;
+}
+
 .HebergementMainOffre a{
     color: black;
     text-decoration: none;
@@ -334,6 +347,11 @@ i.fas.fa-chart-line{
     padding: 5px;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 1px 1px 2px 0px #c7c3c3
+}
+
+.PopulairesOffre:hover{
+    width: 485px;
+    box-shadow: 3px 3px 3px 3px;
 }
 
 .PopulairesOffre a{
@@ -543,6 +561,7 @@ display: flex;
     #Hebergement{
         display: flex;
         flex-direction: column-reverse;
+        padding-right: 3px;
     }
 
     .Populaires{
@@ -635,6 +654,7 @@ display: flex;
 
     .header{
         display:block;
+        height: 8rem;
     }
 
     #navigation{
@@ -642,7 +662,7 @@ display: flex;
         justify-content: center;
         margin-left: 0;
         width:auto;
-        border-bottom: 2px solid lightgrey;
+        border-bottom: 3px solid lightgrey;
         font-size: 1.1em;
     }
 
