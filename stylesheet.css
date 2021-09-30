@@ -307,6 +307,10 @@ color: grey;
     font-weight:600;
 }
 
+#Afficherplus:hover{
+    cursor:pointer;
+}
+
 /* Partie "Les plus populaires */
 
 .Populaires{
@@ -644,7 +648,7 @@ display: flex;
 
     .ActivitésOffreTitre{
         text-align: center;
-        font-size: 1.2em;
+        font-size: 1.07em;
     }
 }
 
