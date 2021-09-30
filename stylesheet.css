@@ -648,7 +648,7 @@ display: flex;
 
     .ActivitésOffreTitre{
         text-align: center;
-        font-size: 1.07em;
+        font-size: 1.1em;
     }
 }
 
@@ -711,6 +711,10 @@ display: flex;
 
     .ActivitésCadre{
         padding-bottom: 55px;
+    }
+
+    .ActivitésOffreTitre{
+        font-size: 1.07em;
     }
 
 }
