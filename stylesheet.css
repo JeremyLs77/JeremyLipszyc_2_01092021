@@ -126,7 +126,7 @@ i.fas.fa-search{
 
 #barre_de_recherche button
 {
-    background: #0070fc;
+    background: #0065fc;
     color: white;
     border: none;
     border-radius: 0px 10px 10px 0px;
@@ -294,7 +294,7 @@ color:#0065fc;
 }
 
 .Starchecked{
-    color:#0070fc
+    color:#0065fc
 }
 
 .Starempty{
